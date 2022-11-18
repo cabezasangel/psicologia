@@ -6,8 +6,12 @@ body {
     color: #924856;
     background-color: #FFF2E3;
     margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    
 
 }
+
 
 header {
     background-color: #DFB7CC;
@@ -33,9 +37,6 @@ header nav ul li {
 header nav ul li a:hover {
     display: block;
     text-decoration:underline;
-    
-    
-    
 
 }
 
@@ -45,6 +46,10 @@ header nav ul li a {
     color: #924856;
     transition: all 1s;
     position: relative;
+}
+
+.logo {
+    margin: 15px;
 }
 
 .titulo-inicio {
@@ -66,7 +71,8 @@ main section {
 
 .contenido-menu {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 
 .contenido-menu h2 {
@@ -81,6 +87,7 @@ main section {
     justify-content: center;
     margin-top: 15px;
     font-size: 30px;
+    padding: 10px;
 
 }
 
@@ -111,9 +118,18 @@ footer {
 
 .logos-footer i {
     padding: 7px;
+    color: #924856;
 }
 
 .logos-footer i:hover {
     color: brown;
     cursor: pointer;
+}
+
+.pie {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(46, 46, 46);
+    color: #ffffff;
+    
 }
